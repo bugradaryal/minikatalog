@@ -1,6 +1,6 @@
 # Katalog Uygulaması (minikatalog)
 
-Flutter kullanılarak geliştirilmiş; ürün listeleme, arama, ürün detayı görüntüleme ve temel sepet yönetimi özelliklerine sahip mobil katalog uygulaması.
+Flutter ile geliştirilmiş mobil katalog uygulamasıdır. Kullanıcı giriş ekranından ad ve soyad bilgisiyle giriş yapar. Ürünler `wantapi.com` REST API servisinden dinamik olarak çekilir ve ızgara (GridView) yapısında listelenir. Kullanıcı ürün detaylarını inceleyebilir, ürünleri sepete ekleyip sepetten çıkarabilir.
 
 | Ana Sayfa | Ürün Detayı | Sepet (Dolu) | Sepet (Boş) |
 | :---: | :---: | :---: | :---: |
