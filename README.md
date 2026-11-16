@@ -23,7 +23,7 @@ Flutter ile geliştirilmiş mobil katalog uygulamasıdır. Kullanıcı giriş ek
 - `shared_preferences` (`^2.5.6`): Sepeti cihazda yerel olarak saklamak için
 - `cupertino_icons` (`^1.0.8`): iOS tarzı ikonlar için
 
-Uygulama tasarımında Material Design kullanıldı.
+Uygulama tasarımında Material kullanıldı.
   
 ## Çalıştırma Adımları
  
