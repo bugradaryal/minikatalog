@@ -1,17 +1,45 @@
-# minikatalog
+# Katalog Uygulaması (minikatalog)
 
-A new Flutter project.
+Flutter kullanılarak geliştirilmiş; ürün listeleme, arama, ürün detayı görüntüleme ve temel sepet yönetimi özelliklerine sahip mobil katalog uygulaması.
 
-## Getting Started
+| Ana Sayfa | Ürün Detayı | Sepet (Dolu) | Sepet (Boş) |
+| :---: | :---: | :---: | :---: |
+| <img src="public/images/ana%20sayfa.png" width="200"/> | <img src="public/images/ürün%20içerik.png" width="200"/> | <img src="public/images/dolu%20sepet.png" width="200"/> | <img src="public/images/boş%20sepet.png" width="200"/> |
 
-This project is a starting point for a Flutter application.
+## Özellikler
+- API'den ürün listesini çekme ve GridView ile kart olarak gösterme
+- Ürün arama
+- Ürün detay sayfası
+- Sepete ürün ekleme / çıkarma
+- Sepetin cihazda saklanması (uygulama kapanıp açılsa da korunur)
+  
+## Kullanılan Flutter Sürümü ve Araçlar
+- **Flutter:** 3.50.0 (Dart 3.14.0)
+- **Editör:** Visual Studio Code
+- **Test ortamı:** Android Studio – Pixel 9 Emulator (Android 16 "Baklava")
+  
+### Proje Bağımlılıkları
+- `http` (`^1.6.0`): API üzerinden ürün verilerini çekmek için
+- `shared_preferences` (`^2.5.6`): Sepeti cihazda yerel olarak saklamak için
+- `cupertino_icons` (`^1.0.8`): iOS tarzı ikonlar için
 
-A few resources to get you started if this is your first Flutter project:
+Uygulama tasarımında Material Design kullanıldı.
+  
+## Çalıştırma Adımları
+ 
+1. Repoyu klonlayın ve klasöre girin:
+```bash
+git clone https://github.com/bugradaryal/minikatalog.git
+cd minikatalog
+```
+ 
+2. Android Studio > **SDK Manager** üzerinden şunları kurun:
+   - Android SDK Platform (Android 16 "Baklava")
+   - Android SDK Build-Tools
+   - Android SDK Command-line Tools
+   - Android SDK Platform-Tools
+   - Android Emulator
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   **Device Manager**'dan **Pixel 9** (Android 16 "Baklava") emülatörünü oluşturun.
+   
+3. Projeyi VS Code'da açıp **F5** ile debug'ı başlatın.
